@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14 - Formulários</title>
+
+    <style>
+        html{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        fieldset input, input{
+            margin: 10px;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        .cadastro{
+            width: 950px;
+            margin: auto;
+            text-align: center;
+        }
+
+        #login{
+            width: 450px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .botao{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Fomulários de Cadastro</h2>
+    <form class="cadastro">
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
+            
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" name="data-nascimento" id="" required><br>
+
+            <label for="Sexo">Sexo:</label>
+            <form aria-required="true">
+                <input type="radio" name="feminino" id="">Feminino
+                <input type="radio" name="masculino" id="">Masculino
+                <input type="radio" name="nao_binario" id="">Não binário
+            </form>
+            <br>
+
+            <label for="cpf">CPF:</label>
+            <input type="number" name="cpf" id="" required>
+
+            <label for="cpf">Telefone:</label>
+            <input type="tel" name="fone" id="" required><br>
+        </fieldset>
+
+        <fieldset class="cadastro">
+            <legend>Endereço:</legend>
+            <label for="cep">CEP:</label>
+            <input type="number" name="cep" id="" required>
+
+            <label for="rua">Rua:</label>
+            <input type="text"name="rua" placeholder="Digite sua rua" required>
+
+            <label for="numero-casa">Número</label>
+            <input type="number" name="numero-casa" id="" required><br>
+
+            <label for="bairro">Bairro:</label>
+            <input type="text"name="bairro" placeholder="Digite seu bairro" required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text"name="cidade" placeholder="Digite sua cidade" required>
+
+            <label for="estado">Estado:</label>
+            <select name="estado" id="" required>
+                <option value="ac">AC</option>
+                <option value="al">AL</option>
+                <option value="ap">AP</option>
+                <option value="am">AM</option>
+                <option value="ba">BA</option>
+                <option value="ce">CE</option>
+                <option value="df">DF</option>
+                <option value="es">ES</option>
+                <option value="go">GO</option>
+                <option value="ma">MA</option>
+                <option value="mt">MT</option>
+                <option value="ms">MS</option>
+                <option value="mg">MG</option>
+                <option value="pa">PA</option>
+                <option value="pb">PB</option>
+                <option value="pr">PR</option>
+                <option value="pe">PE</option>
+                <option value="pi">PI</option>
+                <option value="rj">RJ</option>
+                <option value="rn">RN</option>
+                <option value="rs">RS</option>
+                <option value="ro">RO</option>
+                <option value="rr">RR</option>
+                <option value="sc">SC</option>
+                <option value="sp">SP</option>
+                <option value="se">SE</option>
+                <option value="to">TO</option>
+            </select>
+        </fieldset> <br>
+        <div class="botao">
+            <input type="button" value="Cadastrar">
+        </div>
+    </form>
+
+    <h2>Login</h2>
+    <form id="login">
+        <fieldset>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Digite seu email" required><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" placeholder="Digite sua senha" required>
+        </fieldset><br>
+        <div class="botao">
+            <input type="button" value="Entrar">
+        </div>
+    </form>
+</body>
+</html>
