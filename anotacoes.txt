@@ -1,0 +1,41 @@
+ALINHAMENTO.
+
+alinhamento em cascata - um meio de organização por importancia que criteriza a modificação de um elemento no seu estilo.
+
+Ordem aplicada:
+1 - Fator de colocação - caso um mesmo elemento seja invocado 2 vezes a que será prevalecido é a sua 2º versão, já sua forma final que aparece na execução dela é a última.
+
+2 - Códigos inline - pela proximidade com a tag ela terá mais prioridade perante aos outros.
+
+===================================================================================================================================
+
+HERANÇA
+
+Elementos pai X filhos
+
+pais: elementos que estão por fora ou que tem outro conteudo por dentro, o que irá refletir o estilo.
+
+filho: aqueles que herdam algo do elemento pai, a não ser que ele tenho o estilo próprio dele.
+
+===================================================================================================================================
+
+ESPECIFIDADE:
+
+O casqueteamento será ainda medido pelo peso de casas de casas que cada elemento tem, quanto maior os tipos de nas casas em decimal. Como:
+
+* inline - 1º casa
+* id - 2º casa
+* classes - 3º casa
+* elementos - 4º casas
+
+**Não usar o important, para que tenha uma melhor fluides.
+
+===================================================================================================================================
+
+RESET E NORMALIZE CSS
+
+Cada navegador tem sua onfiguração de elementos e pre formatação
+
+Reset X Normalize:
+Reset - reduzindo a 0 margins e paddings, listas, cabeçalhos. Deixando eles todos iguais. (maior constumização)
+Normalize - deixe de um modo padrão para todos os navegadores com conflitos com sua estilização (consistencia de projetos)
